@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LibroListarComponent } from './libro-listar/libro-listar.component';
+import { MenuComponent } from './menu/menu.component';
 const routes: Routes = [
-  {path: '', component:LibroListarComponent}
+  {path: '', component:MenuComponent}
 ];
 
 @NgModule({

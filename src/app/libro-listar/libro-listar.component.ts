@@ -20,10 +20,6 @@ export class LibroListarComponent implements OnInit {
   ngOnInit(): void {
     this.cargar();
   }
-  //Vuelve el colorscheme transparente
-  generateGradient(color: string): string {
-    return `rgba(${parseInt(color.slice(1, 3), 16)}, ${parseInt(color.slice(3, 5), 16)}, ${parseInt(color.slice(5, 7), 16)}, 1)`;
-  }
   cargar(): void {
     this.LibroService.lista().subscribe(
       data => {
